@@ -1,4 +1,26 @@
-.background {
-    width: 80%;
+@font-face {
+    font-family: myRoboto;
+    src: url("Roboto-Black.copy.tff");
+}
+
+body {
+    background-color: #ffe4c4ab;
+}
+
+.backgroundImg {
+    width: 100%;
+    height: auto;
+}
+
+#layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.img {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
     height: auto;
 }
