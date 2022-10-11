@@ -5,6 +5,10 @@
 
 body {
     background-color: #ffe4c4ab;
+    background-image: url("nathan-dumlao-pMW4jzELQCw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+
 }
 
 .backgroundImg {
@@ -18,9 +22,3 @@ body {
     align-items: center;
 }
 
-div.img {
-    display: flex;
-    justify-content: center;
-    width: fit-content;
-    height: auto;
-}
