@@ -8,17 +8,17 @@ body {
     background-image: url("nathan-dumlao-pMW4jzELQCw-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: 50%;
+    background-attachment: fixed;
 
 }
 
-.backgroundImg {
-    width: 100%;
-    height: auto;
-}
-
-#layout {
+form {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: flex-end;
 }
 
+legend {
+    border: solid black 2px;
+    width: 40em;
+    height: 14em;
+}
