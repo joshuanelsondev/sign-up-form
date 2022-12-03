@@ -3,14 +3,21 @@
     src: url("Roboto-Black.copy.tff");
 }
 
-/* Try placing background-image in index.html file and resizing */
-body {
+.container {
     background-color: #ffe4c4ab;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+/* Try placing background-image in index.html file and resizing */
+.left {
     background-image: url("nathan-dumlao-pMW4jzELQCw-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: 50%;
-    
-
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+    background-position: center;
 } 
 
 form {

@@ -9,29 +9,38 @@
     
 </head>
 <body>
-    
-    <form>
-        <legend>
-            <h2>Join Us!</h2>
-            <div class="inputs">
-                <label for="firstName">FIRST NAME:*</label>
-                <input type="text" name="firstName" id="firstName" maxlength="15" placeholder="Name" required />
-                <label for="lastName">LAST NAME:*</label>
-                <input type="text" name="lastName" id="lastName" maxlength="15" placeholder="Last" required />
-                <br>
-                <label for="email">EMAIL:*</label>
-                <input type="email" name="email" id="email" placeholder="FirstLast@email.com" required />
-                <label for="phone">PHONE NUMBER</label>
-                <input type="tel" name="phone" id="phone" placeholder="xxx-xxx-xxxx" required pattern="^\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" />
-                <br>
-                <label for="pwd">PASSWORD:*</label>
-                <input type="password" name="password" id="pwd" required />
-                <label for="confirmPwd">CONFIRM PASSWORD:*</label>
-                <input type="password" name="confirmPassword" id="confirmPwd" required />
-            </div>
-            
-        </legend>
-    </form>
+    <div class="container">
+        <div class="left">
+            <p>PLACEHOLDER</p>
+        </div>
+        <div class="right">
+            <form>
+                <legend>
+                    <h2>Join Us!</h2>
+                    <div class="inputs">
+                        <label for="firstName">FIRST NAME:*</label>
+                        <input type="text" name="firstName" id="firstName" maxlength="15" placeholder="Name" required />
+                        <label for="lastName">LAST NAME:*</label>
+                        <input type="text" name="lastName" id="lastName" maxlength="15" placeholder="Last" required />
+                        <br>
+                        <label for="email">EMAIL:*</label>
+                        <input type="email" name="email" id="email" placeholder="FirstLast@email.com" required />
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone" placeholder="xxx-xxx-xxxx" required
+                            pattern="^\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" />
+                        <br>
+                        <label for="pwd">PASSWORD:*</label>
+                        <input class="error" type="password" name="password" id="pwd" required />
+                        <label for="confirmPwd">CONFIRM PASSWORD:*</label>
+                        <input class="error" type="password" name="confirmPassword" id="confirmPwd" required />
+                    </div>
+        
+                </legend>
+            </form>
+        </div>
+    </div>
+        
+        
 
         
 </body>
