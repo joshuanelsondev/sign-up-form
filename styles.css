@@ -45,13 +45,14 @@ legend {
    background-color: rgba(245, 245, 245, 0.793);
    width: 50vw;
    height: 30vh;
-   margin: 30px 0 30px 0;
+   margin: 0 0 30px 0;
 }
 
 .inputs-container {
     display: grid;
     grid-template-columns: repeat(2, auto); 
     grid-gap: 10px;
+    margin-left: 50px;
 }
 
 .inputs {
@@ -64,6 +65,7 @@ legend {
 .input-field {
     background-color: rgba(255, 235, 205, 0.89);
     border-radius: 5px;
+    border: none;
 }
 
 label {
@@ -80,16 +82,48 @@ label {
     font-size: 14px;
     box-shadow: 1px 1px 5px rgba(255, 235, 205, 0.923);
     margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+#submit:hover {
+    outline: 1px solid brown;
+    border: 1px solid brown;
+    font-size: 13px;
 }
 
 .log-in {
    display: flex;
    flex-direction: row;
    align-items: center;
+   width: 20vw;
+   justify-content: space-evenly;
+   margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a:hover {
+    font-size: 14px;
 }
 
 input:focus {
-    outline-color: rgba(255, 235, 205, 0.923);
-    box-shadow: 1px 1px 2px rgba(255, 235, 205, 0.923);
-   
+    outline: 1px solid rgb(147, 213, 235);
+    box-shadow: 1px 1px 2px black; 
 }
+
+h2 {
+    color: brown;
+    margin-left: 50px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.greet {
+    width: 40vw;
+}
+
+
