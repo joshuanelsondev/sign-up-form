@@ -63,7 +63,7 @@ legend {
     display: flex;
     flex-direction: column;
     width: 10vw;
-    height: auto;
+    height: 20px;
 
 }
 
@@ -71,11 +71,13 @@ legend {
     background-color: rgba(255, 235, 205, 0.89);
     border-radius: 5px;
     border: none;
+    opacity: 70%;
+    
 }
 
 label {
     font-size: 12px;
-    font-family: Helvetica, sans-serif;
+    font-family: Georgia, sans-serif;
 }
  
 #submit {
@@ -118,7 +120,7 @@ a:hover {
 }
 
 input:focus {
-    outline: 1px solid rgb(147, 213, 235);
+    outline: 1px solid rgb(4, 192, 254);
     box-shadow: 1px 1px 2px black; 
 }
 
