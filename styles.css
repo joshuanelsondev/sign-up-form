@@ -130,12 +130,30 @@ h2 {
 }
 
 .h2 {
-    margin: 50px 0 50px 50px;
+    margin: 20px 0 50px 50px;
 }
 
 .greet {
-    width: 40vw;
-    margin-bottom: 50px;
+    width: 30vw;
+    margin-bottom: 20px;
 }
 
+.sidebar {
+    background: rgba(0, 0, 0, 0.341);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 15%;
+    height: 150px;
+}
 
+.odin {
+    height: 120px;
+    width: auto;
+    margin-right: 50px;
+}
