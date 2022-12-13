@@ -24,20 +24,20 @@
             aliqua. Come join us.</h2>
             <br>
             <h2 class="h2">You <em>know</em> you want to.</h2>
-            <form>
+            <form> 
                 <legend>
                     <h2>Let's Do This!</h2>
                     <div class="inputs-container">
                         <div class="inputs">
-                            <label for="firstName">FIRST NAME*</label>
+                            <label for="firstName">FIRST NAME</label>
                             <input class="input-field" class="firstName" type="text" name="firstName" id="firstName" maxlength="15" placeholder="First Name" required />
                         </div>
                         <div class="inputs">
-                            <label for="lastName">LAST NAME*</label>
+                            <label for="lastName">LAST NAME</label>
                             <input class="input-field" class="lastName" type="text" name="lastName" id="lastName" maxlength="15" placeholder="Last Name" required />
                         </div>
                         <div class="inputs">
-                            <label for="email">EMAIL*</label>
+                            <label for="email">EMAIL</label>
                             <input class="input-field" class="email" type="email" name="email" id="email" placeholder="FirstLast@email.com" required />
                         </div>
                         <div class="inputs">
@@ -45,11 +45,11 @@
                             <input class="input-field" class="phone" type="tel" name="phone" id="phone" placeholder="xxx-xxx-xxxx" required pattern="^\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" />
                         </div>
                         <div class="inputs">
-                            <label for="pwd">PASSWORD*</label>
+                            <label for="pwd">PASSWORD</label>
                             <input class="input-field error" class="pwd" class="error" type="password" name="password" id="pwd" required />
                         </div>
                         <div class="inputs">
-                            <label for="confirmPwd">CONFIRM PASSWORD*</label>
+                            <label for="confirmPwd">CONFIRM PASSWORD</label>
                             <input class="input-field error" class="pwdConfirm" class="error" type="password" name="confirmPassword" id="confirmPwd" required />
                         </div>
                        
@@ -66,7 +66,16 @@
     </div>
         
         
+<footer class="footer">
+    <p id="nameTag">
+        Copyright ©
+        <script>
+            document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+        </script>
+        <a href="https://github.com/joshuanelsondev" target="_blank">joshuanelsondev</a>
+    </p>
 
+</footer>
         
 </body>
 </html>

@@ -18,12 +18,19 @@ body {
     margin: 0 10vw 0 10vw;
     
 }
+
+footer {
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+}
 /* Try placing background-image in index.html file and resizing */
 .left {
     background-image: url("nathan-dumlao-pMW4jzELQCw-unsplash.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     width: 100vw;
-    height: auto;
+    height: 100vh;
     background-position: center;
     
 } 
@@ -72,6 +79,7 @@ legend {
     border-radius: 5px;
     border: none;
     opacity: 70%;
+    width: 15vw;
     
 }
 
@@ -96,7 +104,7 @@ label {
 #submit:hover {
     outline: 1px solid brown;
     border: 1px solid brown;
-    font-size: 13px;
+    
 }
 
 .log-in {
@@ -121,7 +129,7 @@ a:hover {
 
 input:focus {
     outline: 1px solid rgb(4, 192, 254);
-    box-shadow: 1px 1px 2px black; 
+    box-shadow: 2px 2px 3px black; 
 }
 
 h2 {
