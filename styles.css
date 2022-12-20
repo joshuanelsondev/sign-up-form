@@ -9,7 +9,6 @@ body {
 } 
 
 .container {
-    
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -18,11 +17,12 @@ body {
     margin: 0 10vw 0 10vw;
     
 }
-
+ 
 footer {
     position: absolute;
     right: 50%;
     bottom: 0;
+    margin: 0;
 }
 /* Try placing background-image in index.html file and resizing */
 .left {
@@ -42,11 +42,6 @@ footer {
     background-color: rgba(245, 245, 245, 0.793);
     width: 45vw;
  
-}
-
-form {
-    display: flex;
-    flex-direction: column;
 }
 
 legend {
@@ -86,6 +81,8 @@ legend {
 label {
     font-size: 12px;
     font-family: Georgia, sans-serif;
+    color: brown;
+    font-weight: bold;
 }
  
 #submit {
@@ -166,4 +163,83 @@ h2 {
     height: 120px;
     width: auto;
     margin-right: 50px;
+}
+
+
+@media (max-width: 1280px) {
+    .container {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-flow: column;
+        height: auto;
+        text-align: center;
+        margin: 0;
+    }
+
+    .left {
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        background-size: 100vw;
+    }
+
+    .sidebar {
+        height: 15vh;
+        width: 100vw;
+        position: static;
+        background: rgba(0, 0, 0, 0.568);
+    }
+
+    .right {
+        width: 100vw;
+        height: auto;
+    }
+
+    .greet {
+        margin: 10px 25px;
+        width: auto;
+        font-size: 18px;
+    }
+
+    .h2 {
+        margin: 0 0 10px 0;
+    }
+
+    .inputs-container {
+        margin: 0;
+        padding-left: 70px;
+        row-gap: 45px;
+        column-gap: 100px;
+    }
+
+    .input-field {
+        width: 12vh;
+        height: auto;
+    }
+
+    #submit {
+        margin: auto;
+    }
+
+    .log-in {
+        margin: auto;
+    }
+
+    footer {
+        margin: auto;
+        text-align: center;
+        position: static;
+        background-color: rgba(245, 245, 245, 0.793);
+    }
+    
+    #copyright {
+        margin: auto;
+        padding: 8vh;
+        height: 4vh;
+    }
+  
 }
