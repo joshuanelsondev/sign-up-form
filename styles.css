@@ -20,10 +20,18 @@ body {
  
 footer {
     position: absolute;
-    right: 50%;
-    bottom: 0;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
+
+#copyright {
+    margin-bottom: 0;
+}
+
 /* Try placing background-image in index.html file and resizing */
 .left {
     background-image: url("nathan-dumlao-pMW4jzELQCw-unsplash.jpg");
@@ -56,7 +64,7 @@ legend {
 .inputs-container {
     display: grid;
     grid-template-columns: repeat(2, auto); 
-    grid-gap: 20px 0;
+    grid-gap: 40px ;
     margin-left: 50px;
     width: 40vw;
 }
@@ -75,14 +83,16 @@ legend {
     border: none;
     opacity: 70%;
     width: 15vw;
-    
 }
+
+
 
 label {
     font-size: 12px;
     font-family: Georgia, sans-serif;
     color: brown;
-    font-weight: bold;
+    font-weight: 600;
+    width: max-content;
 }
  
 #submit {
@@ -124,9 +134,8 @@ a:hover {
     font-size: 14px;
 }
 
-input:focus {
-    outline: 1px solid rgb(4, 192, 254);
-    box-shadow: 2px 2px 3px black; 
+input:invalid {
+    border-color: red;
 }
 
 h2 {
@@ -166,11 +175,29 @@ h2 {
 }
 
 
-@media (max-width: 1280px) {
+
+
+@media (max-width: 1600px) {
     .container {
         margin: 0;
     }
+
+    .inputs-container {
+        margin-left: 5vw;
+        column-gap: 0;
+    }
+
+    .input-field {
+        width: 15vw;
+        height: auto;
+    }
+
+    footer {
+        height: 3vh;
+    }
+    
 }
+
 
 @media only screen and (max-width: 600px) {
     .container {
@@ -205,26 +232,27 @@ h2 {
         font-size: 18px;
     }
 
+    h2 {
+        margin:  10px 0;
+    }
+
     .h2 {
         margin: 0 0 10px 0;
     }
-
+     
     .inputs-container {
         margin: 0;
-        padding-left: 70px;
+        padding-left: 5vw;
         row-gap: 45px;
-        column-gap: 100px;
+        column-gap: 38vw;
     }
 
     .input-field {
-        width: 12vh;
+        width: max-content;
         height: auto;
     }
 
-    #submit {
-        margin: auto;
-    }
-
+    #submit,
     .log-in {
         margin: auto;
     }
@@ -234,12 +262,25 @@ h2 {
         text-align: center;
         position: static;
         background-color: rgba(245, 245, 245, 0.793);
+        height: 28vh;
     }
     
     #copyright {
         margin: auto;
-        padding: 8vh;
-        height: 4vh;
+        padding-top: 7vh;
+        padding-bottom: 3vh;
+        height: 0;
+        position: relative;
+        top: 10vh;
     }
   
+    .odin {
+        height: 14vh;
+    }
+}
+
+@media (max-height: 720px) {
+    footer {
+        text-align: left;
+    }
 }
