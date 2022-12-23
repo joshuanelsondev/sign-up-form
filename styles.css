@@ -178,9 +178,6 @@ h2 {
 
 
 @media (max-width: 1600px) {
-    .container {
-        margin: 0;
-    }
 
     .inputs-container {
         margin-left: 5vw;
@@ -198,6 +195,11 @@ h2 {
     
 }
 
+@media (max-width: 1080px) {
+    .container {
+            margin: 0;
+        }
+}
 
 @media only screen and (max-width: 600px) {
     .container {
