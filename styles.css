@@ -229,7 +229,7 @@ h2 {
 @media (max-width: 1600px) {
 
     .inputs-container {
-        margin-left: 5vw;
+        margin-left: 50px;
         column-gap: 0;
     }
 
