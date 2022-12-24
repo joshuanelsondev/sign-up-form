@@ -3,9 +3,14 @@
     src: url("Roboto-Black.copy.tff");
 }
 
+html,
 body {
     background-color: rgba(255, 235, 205, 0.89);
-    margin: 0 ;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
 } 
 
 .container {
@@ -15,17 +20,14 @@ body {
     width: auto;
     height: 100vh;
     margin: 0 10vw 0 10vw;
+    overflow: hidden;
     
 }
  
 footer {
+    margin-left: 50px;
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    text-align: center;
+    bottom: 0;
 }
 
 #copyright {
@@ -38,7 +40,7 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 100vh;
+    height: 101vh;
     background-position: center;
     
 } 
@@ -49,6 +51,7 @@ footer {
     justify-content: center;
     background-color: rgba(245, 245, 245, 0.793);
     width: 45vw;
+    height: 101vh;
  
 }
 
@@ -185,12 +188,8 @@ h2 {
     }
 
     .input-field {
-        width: 15vw;
+        width: max-content;
         height: auto;
-    }
-
-    footer {
-        height: 3vh;
     }
     
 }
@@ -201,7 +200,7 @@ h2 {
         }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
     .container {
         flex-flow: column;
         height: auto;
@@ -225,7 +224,7 @@ h2 {
 
     .right {
         width: 100vw;
-        height: auto;
+        height: 100vh;
     }
 
     .greet {
@@ -258,31 +257,21 @@ h2 {
     .log-in {
         margin: auto;
     }
-
-    footer {
-        margin: auto;
-        text-align: center;
-        position: static;
-        background-color: rgba(245, 245, 245, 0.793);
-        height: 28vh;
-    }
-    
-    #copyright {
-        margin: auto;
-        padding-top: 7vh;
-        padding-bottom: 3vh;
-        height: 0;
-        position: relative;
-        top: 10vh;
-    }
   
     .odin {
         height: 14vh;
+    }
+
+    footer {
+        position: relative;
+        margin: 0;
     }
 }
 
 @media (max-height: 720px) {
     footer {
-        text-align: left;
+        position: relative; 
+        text-align: right;
     }
+
 }
