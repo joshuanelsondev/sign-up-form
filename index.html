@@ -43,7 +43,7 @@
                         </div>
                         <div class="inputs">
                             <label for="phone">PHONE NUMBER</label>
-                            <input class="input-field phone" type="tel" name="phone" id="phone" required pattern="^\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" />
+                            <input class="input-field phone" type="tel" name="phone" id="phone" maxlength="10" required pattern="^\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" />
                         </div>
                         <div class="inputs">
                             <label for="password">PASSWORD</label>
@@ -61,7 +61,7 @@
                        
                     </div>
                 </legend>
-                <input type="submit" name="submit" id="submit" value="Create Account">
+                <input class="submit" type="submit" name="submit" id="submit" value="Create Account">
             </form>
             <div class="log-in">
                 <p>Already have an account?</p>

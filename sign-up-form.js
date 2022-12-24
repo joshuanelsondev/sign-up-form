@@ -13,6 +13,11 @@ const passwordErrorMessage = document.createElement('p');
 const confirmPasswordErrorMessage = document.createElement('p');
 const showPwdCheckbox = document.querySelector('.showPwdCheckbox');
 const showPwdDiv = document.querySelector('.showPwdDiv');
+const submitButton = document.querySelector('.submit');
+const confirmation = document.createElement('div');
+confirmation.classList.add('confirm');
+const form = document.querySelector('form');
+let validCounter = 0;
 
 
 
@@ -25,6 +30,7 @@ firstName.addEventListener('input', () => {
         firstName.after(firstNameErrorMessage);
     } else {
         firstNameErrorMessage.textContent = '';
+        validCounter++;
     }
 }); 
 
@@ -35,6 +41,8 @@ lastName.addEventListener('input', (event) => {
         lastName.after(lastNameErrorMessage);
     } else {
         lastNameErrorMessage.textContent = '';
+        validCounter++;
+
     }
 });
 
@@ -45,6 +53,8 @@ email.addEventListener('input', (event) => {
         email.after(emailErrorMessage);
     } else {
         emailErrorMessage.textContent = '';
+        validCounter++;
+
     }
 });
 
@@ -55,6 +65,8 @@ phone.addEventListener('input', (event) => {
         phone.after(phoneErrorMessage);
     } else {
         phoneErrorMessage.textContent = '';
+        validCounter++;
+
     }
 });
 
@@ -65,6 +77,8 @@ password.addEventListener('input', (event) => {
         showPwdDiv.after(passwordErrorMessage);
     } else {
         passwordErrorMessage.textContent = '';
+        validCounter++;
+
     }
 });
 
@@ -75,8 +89,12 @@ confirmPassword.addEventListener('input', (event) => {
         confirmPassword.after(confirmPasswordErrorMessage);
     } else {
         confirmPasswordErrorMessage.textContent = '';
+        validCounter++;
+
     }
 });
+
+submitButton.addEventListener('click', confirmAccountCreation);
 
 
 function showPassword() {
@@ -85,4 +103,18 @@ function showPassword() {
     } else {
         password.type = 'password';
     }
+}
+
+function confirmAccountCreation(event) {
+    event.preventDefault();
+    if (validCounter > 5 && confirmation.textContent == '') {
+        confirmation.textContent = "Thank you for signing up with the Odin Café!";
+        form.append(confirmation);
+        setInterval(() => {
+            confirmation.textContent = '';
+        }, '10000');
+        validCounter = 0;
+    }
+    form.reset();
+    
 }
