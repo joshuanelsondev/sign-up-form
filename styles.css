@@ -109,6 +109,8 @@ label {
     margin-bottom: 10px;
     margin-left: 50px;
     padding: 0;
+    color: brown;
+    font-weight: bold;
 }
 
 #submit:hover {
@@ -175,6 +177,43 @@ h2 {
     height: 120px;
     width: auto;
     margin-right: 50px;
+}
+
+/* Error messages */
+.errorMessage {
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    width: max-content;
+    margin: 0;
+}
+
+.pwdErrorMessage {
+    font-size: 12px;
+    font-weight: bold;
+    width: 36vw;
+    text-align: left;
+    color: red;
+    margin: 0;
+}
+
+.showPwdDiv {
+    width: max-content;
+    display: flex;
+    align-items: center;
+}
+
+
+.showPwdSpan {
+    color: brown;
+    font-size: 12px;
+    font-weight: bold;
+    width: max-content;
+}
+
+.showPwdCheckbox {
+    width: 8px;
+    
 }
 
 

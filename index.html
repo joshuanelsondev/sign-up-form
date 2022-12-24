@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <script src="./sign-up-form.js" defer></script>
     
 </head>
 <body>
@@ -30,27 +31,32 @@
                     <div class="inputs-container">
                         <div class="inputs">
                             <label for="firstName">FIRST NAME</label>
-                            <input class="input-field" class="firstName" type="text" name="firstName" id="firstName" maxlength="20" pattern="[A-Za-z]+" required />
+                            <input class="input-field firstName" type="text" name="firstName" id="firstName" maxlength="20" pattern="[A-Za-z]+"  required />
                         </div>
                         <div class="inputs">
                             <label for="lastName">LAST NAME</label>
-                            <input class="input-field" class="lastName" type="text" name="lastName" id="lastName" maxlength="15" required />
+                            <input class="input-field lastName" type="text" name="lastName" id="lastName" maxlength="15" required />
                         </div>
                         <div class="inputs">
                             <label for="email">EMAIL</label>
-                            <input class="input-field" class="email" type="email" name="email" id="email" required />
+                            <input class="input-field email" type="email" name="email" id="email" required />
                         </div>
                         <div class="inputs">
                             <label for="phone">PHONE NUMBER</label>
-                            <input class="input-field" class="phone" type="tel" name="phone" id="phone" required pattern="^\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" />
+                            <input class="input-field phone" type="tel" name="phone" id="phone" required pattern="^\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" />
                         </div>
                         <div class="inputs">
-                            <label for="pwd">PASSWORD</label>
-                            <input class="input-field error" class="pwd" class="error" type="password" name="password" id="pwd" required />
+                            <label for="password">PASSWORD</label>
+                            <input class="input-field password error" type="password" name="password" id="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required />
+                            <div class="showPwdDiv">
+                                <input class="showPwdCheckbox" type="checkbox" name="showPwd" onclick="showPassword()"><span class="showPwdSpan">Show
+                                    Password</span>
+                            </div>
+                            
                         </div>
                         <div class="inputs">
                             <label for="confirmPwd">CONFIRM PASSWORD</label>
-                            <input class="input-field error" class="pwdConfirm" class="error" type="password" name="confirmPassword" id="confirmPwd" required />
+                            <input class="input-field confirmPwd error" type="password" name="confirmPassword" id="confirmPwd" required />
                         </div>
                        
                     </div>
