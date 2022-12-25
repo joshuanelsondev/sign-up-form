@@ -17,10 +17,10 @@ const submitButton = document.querySelector('.submit');
 const confirmation = document.createElement('div');
 confirmation.classList.add('confirm');
 const form = document.querySelector('form');
+const inputs = document.querySelectorAll('.input-field');
 
 
 firstName.addEventListener('blur', () => {
-    confirmation.textContent = '';
     if (firstName.value === '') {
         firstNameErrorMessage.textContent = 'Please enter your first name';
         firstNameErrorMessage.classList.add('errorMessage');
@@ -124,10 +124,19 @@ function showPassword() {
     }
 }
 
+
 function confirmAccountCreation(event) {
     event.preventDefault();
-    console.log('Test');
-    confirmation.textContent = "Thank you for signing up with the Odin Café!";
-    form.append(confirmation); 
-    form.reset();
+    if (password.value === confirmPassword.value) {
+        console.log('Test');
+        confirmation.textContent = "Thank you for signing up with the Odin Café!";
+        form.append(confirmation);
+        form.reset();
+    }
 }
+
+inputs.forEach(input => {
+    input.addEventListener('focus', () => {
+        confirmation.textContent = '';
+    });
+});
