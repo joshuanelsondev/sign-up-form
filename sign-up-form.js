@@ -69,7 +69,7 @@ email.addEventListener('focus', (event) => {
 });
 
 phone.addEventListener('blur', (event) => {
-    if (phone.value.length <= 10 && phone.validity.patternMismatch) {
+    if (phone.validity.patternMismatch) {
         phoneErrorMessage.textContent = 'Please enter a valid phone number';
         phoneErrorMessage.classList.add('errorMessage');
         phone.after(phoneErrorMessage);
