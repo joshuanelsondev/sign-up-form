@@ -310,6 +310,7 @@ h2 {
     #submit,
     .log-in {
         margin: auto;
+        outline: none;
     }
   
     .odin {
