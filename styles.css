@@ -258,6 +258,10 @@ h2 {
         margin: 0;
     }
 
+    legend {
+        width: 100%;
+    }
+
     .left {
         width: 100vw;
         height: 15vh;
