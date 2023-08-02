@@ -4,4 +4,4 @@ Change the border when user inputs information as well as when the info is not f
 
 [View Page](https://joshuanelsondev.github.io/sign-up-form/)
 
-![Page View](images/sign-up-form-screenshot.png)
+![Page View](./images/sign-up-form-screenshot.png)
